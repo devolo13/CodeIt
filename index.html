@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="leftNav">
+        <img src="images/cat.svg" alt="cat logo" />
+        <h2>CodeIt</h2>
+        <input type="text" placeholder="search" id="searchBar" />
+        <button class="btn" onclick="search(searchBar.value)">Go</button>
+      </div>
+      <div class="rightNav">
+        <button class="btn blue">Get App</button>
+        <button class="btn">Log In</button>
+      </div>
+    </nav>
+    <div class="header">
+      <div class="topHead">
+        <img src="images/cat.svg" alt="cat logo" />
+        <h1>c/Dojo</h1>
+        <button class="btn" id="joinButton" onclick="removeThis(this)">
+          Join
+        </button>
+      </div>
+      <div class="bottomHead">
+        <a href="#" id="currentPage">Posts</a>
+        <a href="#">Wiki</a>
+        <a href="#">c/Dojo</a>
+        <a href="#">Discord</a>
+      </div>
+    </div>
+    <div class="mainContent">
+      <div class="leftMainColumn">
+        <div class="postBox">
+          <div class="leftSideOfPost">
+            <!-- <img src="images/arrow-up-short.svg" alt="up arrow" onclick="upvote('p1Upvotes')"> -->
+            <button onclick="upvote('p1Upvotes')">
+              <img src="images/arrow-up-short.svg" alt="up arrow" />
+            </button>
+            <div id="p1Upvotes">29</div>
+            <button onclick="downvote('p1Upvotes')" id="downvoteButton">
+              <img src="images/arrow-down-short.svg" alt="down arrow" />
+            </button>
+          </div>
+          <div class="rightSideOfPost">
+            <h3>Best of Project Week 2022!</h3>
+            <img
+              src="images/Placeholder.png"
+              alt="placeholder image"
+              class="postImage"
+            />
+            <div class="postCommentsAndShare">
+              <img src="images/chat-dots.svg" alt="comments button" />
+              <p class="comments"><span>42</span> comments</p>
+              <img src="images/fa-share.svg" alt="share button" />
+              <p>Share</p>
+            </div>
+          </div>
+        </div>
+        <div class="postBox">
+          <div class="leftSideOfPost">
+            <button onclick="upvote('p2Upvotes')">
+              <img src="images/arrow-up-short.svg" alt="up arrow" />
+            </button>
+            <div id="p2Upvotes">17</div>
+            <button onclick="downvote('p2Upvotes')">
+              <img src="images/arrow-down-short.svg" alt="down arrow" />
+            </button>
+          </div>
+          <div class="rightSideOfPost">
+            <h3>I use my cat as a rubber duck, is that weird?</h3>
+            <img
+              src="images/Placeholder.png"
+              alt="placeholder image"
+              class="postImage"
+            />
+            <div class="postCommentsAndShare">
+              <img src="images/chat-dots.svg" alt="comments button" />
+              <p class="comments"><span>16</span> comments</p>
+              <img src="images/fa-share.svg" alt="share button" />
+              <p>Share</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rightMainColumn">
+        <div class="card">
+          <div class="cardHeader">
+            <h5>About the Dojo</h5>
+          </div>
+          <p>
+            Changing Lives with Code and a dedicated community of debuggers!
+          </p>
+        </div>
+        <div class="card">
+          <div class="cardHeader">
+            <h5>Discord</h5>
+          </div>
+          <button class="btn">discord.gg/cdojo</button>
+        </div>
+        <div class="card">
+          <div class="cardHeader">
+            <h5>c/Dojo Rules</h5>
+          </div>
+          <ol>
+            <li>Follow the 20 Minute Rule!</li>
+            <li>Don't compare yourself to others!</li>
+            <li>Learn Actively</li>
+            <li>Don't Chase Best Practices (yet)</li>
+            <li>When you're behind, ask for help!</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

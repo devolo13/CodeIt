@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+.btn {
+  padding: 10px 25px;
+  border-radius: 7px;
+  border: 3px solid black;
+}
+nav {
+  color: black;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+}
+nav img {
+  width: 20px;
+}
+.leftNav,
+.rightNav {
+  display: flex;
+  margin: 10px 20px;
+}
+.leftNav .btn {
+  color: black;
+  background-color: orange;
+  box-shadow: 2px 2px black;
+  padding: 5px 10px;
+  border-radius: 0;
+}
+.leftNav img,
+.leftNav h2 {
+  margin-right: 20px;
+}
+.leftNav input {
+  border: 3px solid black;
+}
+.rightNav * {
+  margin-left: 20px;
+}
+.rightNav .btn {
+  color: black;
+  background-color: orange;
+}
+.rightNav .btn.blue {
+  background-color: blue;
+  color: white;
+}
+.header {
+  padding-left: 100px;
+  padding-top: 40px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+.topHead {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.topHead * {
+  margin-right: 15px;
+}
+.header .topHead img {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  /* HOW DO I KEEP THE BORDER FROM CROPPING THE IMAGE? */
+}
+.topHead .btn {
+  color: white;
+  background-color: red;
+  border: none;
+}
+.bottomHead {
+  margin-bottom: 5px;
+}
+.bottomHead * {
+  margin-right: 7px;
+  text-decoration: none;
+  color: black;
+}
+#currentPage {
+  color: red;
+  text-decoration: underline;
+}
+.mainContent {
+  background-color: lightgrey;
+  padding: 5px 100px 0 100px;
+  display: flex;
+}
+.leftMainColumn {
+  flex: 2;
+}
+.rightMainColumn {
+  flex: 1;
+}
+.postBox {
+  border: 2px grey solid;
+  background-color: white;
+  padding: 10px 20px;
+  margin: 0 20px 20px 0;
+  display: flex;
+}
+.postBox img {
+  width: 20px;
+}
+.postBox button {
+  background-color: inherit;
+  border: none;
+}
+.rightSideOfPost {
+  margin: 0 20px 0 20px;
+}
+.postImage {
+  border: 2px black solid;
+  height: 250px;
+  min-width: 400px;
+  margin-top: 10px;
+}
+.postCommentsAndShare {
+  display: flex;
+}
+.postCommentsAndShare * {
+  margin-right: 10px;
+}
+.postCommentsAndShare span {
+  margin-right: 0;
+}
+.card {
+  background-color: white;
+  border: 2px grey solid;
+  margin-bottom: 20px;
+}
+.card * {
+  padding: 5px 10px;
+}
+.cardHeader {
+  background-color: red;
+  color: white;
+  border: 2px black solid;
+  padding: 0;
+}
+.card p {
+  margin-bottom: 50px;
+}
+.card .btn {
+  background-color: white;
+  width: 90%;
+  margin: 10px calc(5% - 3px) 10px calc(5% - 3px);
+}
+.card li {
+  margin-left: 20px;
+}
+.card ol {
+  margin-bottom: 50px;
+}
